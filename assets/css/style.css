@@ -1,0 +1,863 @@
+*{
+	margin:0px;
+	padding:0px;
+	font-family: 'Roboto', sans-serif;
+}
+html{
+	background-color:#f5f6fb;
+}
+body{
+	background-color:#f5f6fb;
+}
+.sidebar {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	left: 0;
+	background-color: #09505e;
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding-top: 0px !important;
+	border-right: 5px solid #2ac0ca;
+}
+#imgLogo{
+	margin-left:auto;
+	margin-right:auto;
+	padding:40px 0px 5px 0px;
+	user-drag: none;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+.dateTime{
+	background-color:#07859e;
+	color:#ffffff;
+	font-family: 'Roboto', sans-serif;
+	font-size:13px;
+}
+.dateTimeBorder{
+	border-bottom: 3px solid #3acbd4;
+}
+.sidebar a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 18px;
+	color: #fff;
+	display: block;
+	transition: 0.7s;
+}
+.sidebar a:hover ,.dropdown-btn:hover{
+	color: #f1f1f1;
+	background-color:#2ac0ca;
+}
+.sidebar .closebtn {
+	position: absolute;
+	top:0;
+	right: 2px;
+	font-size: 36px;
+	/* margin-left: 50px; */
+	float:right;
+	text-decoration: none;
+}
+.openbtn {
+	font-size: 20px;
+	cursor: pointer;
+	background-color: #2ac0ca;
+	color: white;
+	padding: 10px 13px;
+	border: none;
+	border-radius:0px 0px 2px 0px;
+	position: fixed;
+	z-index:100;
+	outline: none;
+	border: none;
+	/* opacity: 0.7; */
+}
+.openbtn:hover {
+	background-color: #2ac0ca;
+	opacity: 0.7;
+	outline: none;
+	border: none;
+}
+.openbtn:active {
+	outline: none;
+	border: none;
+}
+.openbtn:focus {
+	outline: none;
+	border: none;
+}
+#main {
+transition: margin-left .5s;
+padding: 0px 16px 0px 0px;
+}
+#containerDashboard{
+	background-color:#2ac0ca;
+	transition: margin-left .5s;
+	width: auto;
+	z-index:30;
+}
+#headerConfig{
+	padding-left:50px;
+	padding-top: 10px;
+	height: 50px;
+	/* border-bottom:1px solid #aaaaaa; */
+	/* padding-bottom: 10px; */
+}
+.has-search .form-control {
+	/* padding-left: 2.375rem; */
+	margin-bottom:0px !important;
+}
+#searchBot{
+	margin-bottom: 0px;
+}
+#searchBTN{
+	background-color: transparent;
+}
+.has-search .form-control {
+	padding-left: 2.375rem;
+}
+#searchC{
+	margin-bottom:3px !important;
+}
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+	color: #aaaaaa;
+	-webkit-transition: all ease 1s;
+    -moz-transition: all ease 1s;
+    -o-transition: all ease 1s;
+    -ms-transition: all ease 1s;
+}
+#MainDashboard{
+	background-color: #f5f6fb;
+	transition: margin-left .5s;
+	padding-top: 10px;
+	width: auto;
+}
+#googlemapsDashboardAll, #googlemapsEvClick{
+	height: 300px;
+	/* min-width: 500px; */
+	/* float:left; */
+	/* margin-left:15px; */
+}
+#bgGmaps{
+	padding: 10px;
+	background-color: #ffffff;
+	box-shadow: 0px 0px 2px 0px #d2d2d3;
+	border-radius:2px;
+}
+.fontComforta{
+	font-family: 'Comfortaa', cursive;
+}
+#textPosVM, #chartKondisi{
+	font-size: 16px;
+	/* font-weight: 500; */
+	color:#464c5d;
+}
+#bgMapsP{
+	padding-top: 5px;
+}
+.FontBold700{
+	font-weight: 700
+}
+.Fontsize17{
+	font-size:17px;
+}
+#chartdiv{
+	height:305px;
+}
+#tranHarian{
+	background-color:#0788e2;
+	/* border-radius:1px; */
+	/* padding-bottom: 20px; */
+	padding-top:10px;
+	padding-bottom: 18px;
+	color:#fff;
+}
+#tranMingguan{
+	background-color:#0fa0a9;
+	/* border-radius:5px; */
+	/* padding-bottom: 20px; */
+	padding-top:10px;
+	padding-bottom: 18px;
+	color:#fff;
+}
+#tranBulanan{
+	background-color:#a9570f;
+	/* border-radius:5px; */
+	/* padding-bottom: 20px; */
+	padding-top:10px;
+	padding-bottom: 18px;
+	color:#fff;
+}
+#iconic-fin{
+	padding:10px 14px;
+	border-radius:2px;
+	background-color: #ffff;
+	color:#0788e2;
+	float:right;
+	box-shadow: 0 4px 2px -2px gray;
+}
+#iconic-fin:hover{
+	background-color:#efeeee;
+}
+#iconFA{
+	font-size: 20px;
+}
+#tHarian{
+	padding-top: 10px;;
+	font-weight: 500;
+	font-size: 25px;
+}
+#tHarianf,#tHariang,#tHarianh{
+	font-size: 20px;
+}
+#tHariana{
+	color:#eeecec;
+	font-size: 14px;
+}
+#tHariana a{
+	color:#f2ea07;
+	text-decoration:none;
+	font-weight: 500;
+}
+#tHariana a:hover{
+	color:#cbc40c;
+}
+#samaaja{
+	box-shadow: 0px 0px 2px 0px #d2d2d3;
+	padding:10px;
+	padding-bottom: 100px;
+	color:#464c5d;
+	border-radius:2px;
+	/* min-width: 400px; */
+	/* max-width: 997px; */
+}
+.bgWhite{
+	background-color: #fff;
+}
+.tombollink:link, .tombollink:visited, .tombollink:active{
+	text-decoration: none;
+	padding:5px 8px;
+	background-color:#0788e2;
+	color:#fff;
+	border-radius:3px;
+	font-size:14px;
+}
+.tombollink:hover{
+	background-color:#202135;
+}
+#chartAnalisisPenjualan{
+	height: 398px;
+}
+#top10vmd{
+	padding-top:4px;
+	padding-bottom: 4px;
+}
+
+
+.dropdown-btn{
+	padding: 6px 8px 6px 32px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #fff;
+  display: block;
+  border: none;
+  background: none;
+  width:100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  transition: 0.5s;
+}
+.dropdown-btn:hover {
+	color: #f1f1f1;
+}
+.dropdown-container {
+display: none;
+background-color: #09505e;
+padding-left: 8px;
+}
+  
+  /* Optional: Style the caret down icon */
+.fa-caret-down {
+float: right;
+padding-top:5px;
+padding-right: 8px;
+}
+
+#Geserb{
+	background-color: #f5f6fb;
+	transition: margin-left .5s;
+	padding-top: 10px;
+	width: auto;
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+.sidebar {padding-top: 15px;}
+.sidebar a {font-size: 18px;}
+/* #googlemapsDashboardAll{	
+	margin-left:0px;
+} */
+}
+
+
+
+@media only screen and (max-width: 720px) {
+	#paddingx10{
+		padding:0px 15px;
+	}
+	.batasmob{
+		padding-right:15px;
+	}
+	#mTo{
+		margin-bottom: 10px;
+	}
+}
+.chevron-left, .chevron-right{
+	color:#fff !important;
+	
+}
+
+/* KAI */
+#kai-jumlahpengguna{
+	background-color:#01303e;
+	color:#fff;
+	border-radius:0px 3px 3px 0px;
+}
+#kai-jumlahpengguna2{
+	background-color:#3f3002;
+	color:#fff;
+	border-radius:0px 3px 3px 0px;
+}
+#kai-jumlahpengguna1{
+	background-color:#013e26;
+	color:#fff;
+	border-radius:0px 3px 3px 0px;
+}
+#kai-jumlahpengguna3{
+	background-color:#3e1501;
+	color:#fff;
+	border-radius:0px 3px 3px 0px;
+}
+#paddingRG{
+	padding:0 8px;
+}
+#iconinkai{
+	font-size: 35px;
+	padding: 20px;
+	height: 90px;
+	background-color: #0c95c0;
+	border-radius:0px 3px 3px 0px;
+	/* box-shadow: -10px 0px px 1px #aaaaaa; */
+	box-shadow: 0px 0px 2px 0px #000;
+	transition: 0.5s;
+}
+#iconinkai:hover{
+	color: #0c95c0;
+	background-color: #fff;
+	transition: 0.5s;
+	box-shadow: 0px 0px 4px 0px #000;
+}
+#iconinkai2{
+	font-size: 35px;
+	padding: 20px;
+	height: 90px;
+	background-color: #c4970d;
+	border-radius:0px 3px 3px 0px;
+	/* box-shadow: -10px 0px px 1px #aaaaaa; */
+	box-shadow: 0px 0px 2px 0px #000;
+	transition: 0.5s;
+}
+#iconinkai2:hover{
+	color: #c4970d;
+	background-color: #fff;
+	transition: 0.5s;
+	box-shadow: 0px 0px 4px 0px #000;
+}
+#iconinkai1{
+	font-size: 35px;
+	padding: 20px;
+	height: 90px;
+	background-color: #0cc0ad;
+	border-radius:0px 3px 3px 0px;
+	/* box-shadow: -10px 0px px 1px #aaaaaa; */
+	box-shadow: 0px 0px 2px 0px #000;
+	transition: 0.5s;
+}
+#iconinkai1:hover{
+	color: #0cc0ad;
+	background-color: #fff;
+	transition: 0.5s;
+	box-shadow: 0px 0px 4px 0px #000;
+}
+#iconinkai3{
+	font-size: 35px;
+	padding: 20px;
+	height: 90px;
+	background-color: #c02e0c;
+	border-radius:0px 3px 3px 0px;
+	/* box-shadow: -10px 0px px 1px #aaaaaa; */
+	box-shadow: 0px 0px 2px 0px #000;
+	transition: 0.5s;
+}
+#iconinkai3:hover{
+	color: #c02e0c;
+	background-color: #fff;
+	transition: 0.5s;
+	box-shadow: 0px 0px 4px 0px #000;
+}
+#mGleft{
+	margin-left: 0px;
+}
+.hrefDec {
+	text-decoration: none;
+	color:#fff;
+}
+#title-Xtopkai{
+	font-size: 15px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+#title-Ytopkai{
+	font-size: 20px;
+	line-height: 0.4;
+	color:#f2ea07;
+}
+#sizeiconinKAI{
+	font-size: 26px;
+}
+#boxShadoww{
+	padding: 10px;
+	background-color: #ffffff;
+	box-shadow: 0px 0px 2px 0px #d2d2d3;
+	border-radius:2px;
+}
+.boxPad10{
+	padding:10px;
+}
+#markersallKAI{
+	height: 300px;
+	/* position: static; */
+}
+#chartPieConditionKAI{
+	height:308px;
+}
+
+
+
+
+
+
+/* Marker LABELCONTENT GMAPS */
+#tempLabel{
+	/* padding:5px 0px; */
+	font-family: 'Roboto', sans-serif;
+	border-radius:10px;
+	/* margin:auto; */
+	/* cursor:pointer; */
+	
+}
+.segitigaLabel{
+	width:0;
+	height:0;
+	border-left:7px solid transparent;
+	border-right:7px solid transparent;
+	margin:auto;
+	left:10px;
+	margin-left:auto;
+	margin-right:auto;
+	/* box-shadow: 0 2px 4px 0 rgba(0,0,0,.2) */
+	
+}
+.segHijau{
+border-top:10px solid #038c5c;
+}
+.segBirutua{
+	border-top:10px solid #34495e;
+}
+.segMerah{
+border-top:10px solid #811411;
+}
+.segKuning{
+border-top:10px solid #ffa500;
+}
+.textLabel{
+	color:white;
+	/* background-color:#4CAF50; */
+	padding:8px 5px;
+	font-size:10px;
+	/* max-width:100px; */
+	/* min-width:100px; */
+	text-align:left;
+	/* border:1px solid #4CAF50; */
+	border-radius:3px;
+	/* margin:auto; */
+}
+.borderAKK{
+	 border-top: 1px solid #ffffff;
+	border-right: 1px solid #ffffff;
+	border-left: 1px solid #ffffff;
+}
+
+.all {
+	box-shadow: 0 0 5px #333;
+}
+.top {
+	box-shadow: 0 -5px 5px -5px #333;
+}
+
+.right {
+	box-shadow: 5px 0 5px -5px #333;
+}
+
+.bottom {
+box-shadow: 0 5px 5px -5px #333;
+}
+
+.left {
+	box-shadow: -5px 0 5px -5px #333;
+}
+.iwNamadaerah{
+	font-size:15px;
+}
+.iwNamadaerah span{
+	font-weight:500;
+	color:#434347;
+}
+.wbiru{
+	color:#1ba1e4;
+}
+.iwskor{
+	/* margin-left:100px; */
+	font-weight:500;
+
+}
+.wgreen{
+	background-color: #3f9143;
+	border-radius:3px;
+	padding:5px;
+	color:#ffffff;
+}
+.wfloatright{
+	float:right;
+}
+.wpadtopbot{
+	margin:13px 0 13px 0;
+}
+
+
+.st_on{
+	padding:1px 7px;
+	border-radius: 2px;
+	/* border:1px solid #fff; */
+}
+.color_greenM{
+	background-color: #038c5c;
+}
+.color_whiteM{
+	color: #ffffff;
+}
+.color_redM{
+	background-color: #811411;
+}
+.color_greencosta{
+	background-color: #2ac0ca;
+}
+.txtdisini{
+	font-size: 12px;
+}
+
+.labelNamadaerah{
+	font-family: 'Roboto', sans-serif;
+	font-size:12px;
+	font-weight:500;
+}
+#lognext{
+	margin-left:8px;
+	padding: 5px 6px;
+	border-radius: 100%;
+	background-color: #ffffff;
+	color:#343a40;
+}
+#lognext:hover{
+	background-color: #0c95c0;
+}
+.pad10px{
+	padding-left: 11px !important;
+}
+.OverFlowY{
+	overflow-y: auto;
+	height: 200px;
+}
+#testing tr td{
+	border:1px solid #fff;
+	width:200px;
+}
+
+/* box select */
+.box {
+}
+
+.box select {
+	/* transition: margin-top .5s; */
+	background-color: #2ac0ca;
+	color: white;
+	padding: 12px 10px 12px 5px;
+	width: 250px;
+	border: none;
+	font-size: 16px;
+	box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+	-webkit-appearance: button;
+	appearance: button;
+	outline: none;
+	/* -webkit-appearance: none; */
+	-moz-appearance: button;
+	/* padding-right: ; */
+}
+
+.box::before {
+	/* content: "\f13a"; */
+	font-family: FontAwesome;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 20%;
+	height: 100%;
+	text-align: center;
+	font-size: 28px;
+	line-height: 45px;
+	color: rgba(255, 255, 255, 0.5);
+	background-color: rgba(255, 255, 255, 0.1);
+	pointer-events: none;
+}
+
+.box:hover::before {
+	color: rgba(255, 255, 255, 0.6);
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+.box select option {
+	padding: 30px;
+}
+/* box select */
+
+#comboboxMesin,#comboboxLokasi,#filtershowsemualokasi,#filtershowlokasi,#filtershowlokasiKAI,#kok{
+	display:none;
+}
+#tombolSubmit{
+	background-color:#007bff ;
+	color:#fff;
+	border-radius: 0px;
+	top: 24px;
+	padding-top:10px;
+	padding-bottom: 9px;
+}
+.content-wrapper{
+	/* padding:10px; */
+}
+#wrapperLok-background{
+	/* background-color: #2ac0ca; */
+}
+#nameLocation{
+	font-size: 16px;
+	font-weight: 500;
+	color:#232a31;
+}
+.fontSize12{
+	/* font-size: 12; */
+	font-weight: 500;
+}
+
+/* custom marker google maps */
+.gm-ui-hover-effect {
+	display:none !important;
+}
+.gm-style-iw-d{
+	overflow: hidden !important;
+	max-height: 100% !important;
+}
+.gm-style .gm-style-iw {
+    background-color: #fff !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: auto !important;
+    height: auto !important;
+    min-height: 200px !important;
+    padding: 10px 10px 15px 10px !important;
+    display: block !important;
+ }
+.gm-style-iw-c{
+	border-radius: 3px !important;
+}
+/* custom marker google maps */
+#lh{
+	margin-top: 5px;
+}
+#lh-l{
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+#wrapperchild{
+	margin-top: 10px;
+}
+.font12{
+	font-weight: 500;
+}
+/* #lhtab{
+	
+} */
+#tabinmarker{
+	/* padding-top: 5px !important; */
+	border-collapse: separate;
+}
+ td{
+	border-spacing: 5em;
+}
+
+#googlemapsEvClick{
+	display: none;
+}
+
+#tabinmarker td {
+	padding-top:2px;
+	padding-bottom:2px;   
+  }
+  
+  #tabinmarker  td:first-child {
+	padding-left:0px;
+	padding-right:0px;
+  }
+
+.td_comboboxlok{
+	padding:10px;
+}
+.btncs{
+	background-color: #2ac0ca; /* Green */
+  border: none;
+  color: white;
+  padding: 6px 28px;
+  /* text-align: center; */
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 24px;
+}
+
+/* .column-grid-container{ */
+	/* display: flex; */
+	/* grid-gap: 70px 10px; */
+	/* grid-template-columns: auto auto auto; */
+	/* background-color: #007bff; */
+/* } */
+/* .col-grid-item{ */
+	/* background-color: red; */
+	/* padding:5px; */
+	/* font-size: 17px; */
+/* } */
+
+
+#SKVM_bg{
+	padding: 10px;
+	background-color: #ffffff;
+	box-shadow: 0px 0px 2px 0px #d2d2d3;
+	border-radius:2px;
+	margin-left: 10px;
+	height: auto;
+}
+#SKVM_bg2{
+	padding: 10px;
+	min-width:500;
+	height: auto;
+	width:930px;
+	background-color: #ffffff;
+	box-shadow: 0px 0px 2px 0px #d2d2d3;
+	border-radius:2px;
+	/* margin-left: 10px; */
+}
+#showMapping{
+	height: 296px;
+}
+
+#SKVM_bgMargin{
+	/* width: 1366px; */
+	background-color: #ffffff;
+	box-shadow: 0px 0px 2px 0px #d2d2d3;
+	border-radius:2px;
+	height: auto;
+	top:315px;
+}
+
+
+/* pengambilanCashbox.php */
+#pcb-form1{
+	background-color: #ffffff;
+	border:1px solid #c4c2c3;
+	border-radius: 2px;
+	
+}
+#button-choose1{
+	background-color: #ffffff;
+	border-radius: 2px;
+	font-weight:500;
+	border:1px solid #c4c2c3;
+}
+#button-choose1:hover{
+	background-color: #2ac0ca;
+	color:#ffffff;
+	font-weight:500;
+	border-radius: 2px;
+}
+button#button-choose1:focus{
+	background-color: #2ac0ca;
+	color:#ffffff;
+	font-weight:500;
+	border-radius: 2px;
+}
+#button-choose2{
+	background-color: #ffffff;
+	border-radius: 2px;
+	font-weight:500;
+	border:1px solid #c4c2c3;
+}
+#button-choose2:hover{
+	background-color: #2ac0ca;
+	color:#ffffff;
+	font-weight:500;
+	border-radius: 2px;
+}
+button#button-choose2:focus{
+	background-color: #2ac0ca;
+	color:#ffffff;
+	font-weight:500;
+	border-radius: 2px;
+}
+#form-chose2{
+	border-bottom: 3px solid #2ac0ca;
+}
+.button-submit1{
+	background-color: #2ac0ca !important;
+	color:#ffffff;
+	margin-top:40px;
+	border-radius:2px !important;
+}
+#mapPC{
+	min-height: 366px;
+}
+.pcb-form1{
+	background-color: #ffffff;
+	border:1px solid #c4c2c3;
+	border-radius: 2px;
+	
+}
